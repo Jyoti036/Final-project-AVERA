@@ -1,0 +1,1 @@
+document.querySelectorAll(".faq-q").forEach(btn=>btn.addEventListener("click",()=>{btn.parentElement.classList.toggle("open");btn.querySelector("i").classList.toggle("bi-plus");btn.querySelector("i").classList.toggle("bi-dash")}));

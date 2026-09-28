@@ -1,0 +1,2 @@
+{% extends "main/base.html" %}{% block title %}Join AVERA{% endblock %}
+{% block content %}<section class="auth-wrap"><div class="auth-card"><span class="eyebrow">WELCOME</span><h1>Create your account</h1><p class="text-muted">Join AVERA as a supporter and track your contributions.</p><form method="post">{% csrf_token %}{% include "main/form_fields.html" with form=form %}<button class="btn btn-dark w-100 btn-lg">Create Account</button></form><p class="text-center mt-3">Already registered? <a href="{% url 'login' %}">Login</a></p></div></section>{% endblock %}

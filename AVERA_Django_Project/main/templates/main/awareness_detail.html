@@ -1,0 +1,2 @@
+{% extends "main/base.html" %}{% block title %}{{ item.title }}{% endblock %}
+{% block content %}<section class="section"><div class="container narrow">{% if item.image %}<img class="detail-image" src="{{ item.image.url }}">{% endif %}<span class="eyebrow">{{ item.get_content_type_display }}</span><h1>{{ item.title }}</h1><p class="text-muted">{{ item.publication_date }}</p><div class="prose">{{ item.description|linebreaks }}</div></div></section>{% endblock %}

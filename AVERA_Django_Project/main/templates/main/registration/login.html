@@ -1,0 +1,2 @@
+{% extends "main/base.html" %}{% block title %}Login{% endblock %}
+{% block content %}<section class="auth-wrap"><div class="auth-card"><span class="eyebrow">WELCOME BACK</span><h1>Login to AVERA</h1><form method="post">{% csrf_token %}{% include "main/form_fields.html" with form=form %}<button class="btn btn-dark w-100 btn-lg">Login</button></form><p class="text-center mt-3">New here? <a href="{% url 'register' %}">Create an account</a></p></div></section>{% endblock %}
